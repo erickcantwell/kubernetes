@@ -1,1 +1,3 @@
 _output/local/bin/linux/amd64/kube-proxy usr/bin
+upstart/kube-proxy.conf etc/init
+config/kube-proxy etc/default
