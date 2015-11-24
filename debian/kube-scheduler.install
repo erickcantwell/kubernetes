@@ -1,1 +1,3 @@
 _output/local/bin/linux/amd64/kube-scheduler usr/bin
+upstart/kube-scheduler.conf etc/init
+config/kube-scheduler etc/default
