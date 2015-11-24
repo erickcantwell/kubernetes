@@ -6,7 +6,7 @@ Build-Depends: debhelper (>= 9)
 Standards-Version: 3.9.5
 Homepage: https://kubernetes.io
 
-Package: kubernetes
+Package: kube
 Architecture: amd64
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: Kubernetes package to contain shared components
