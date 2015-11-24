@@ -1,1 +1,3 @@
 _output/local/bin/linux/amd64/kube-apiserver usr/bin
+upstart/kube-apiserver.conf etc/init
+config/kube-apiserver etc/default
