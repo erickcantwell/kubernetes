@@ -1,1 +1,3 @@
 _output/local/bin/linux/amd64/kube-controller-manager usr/bin
+upstart/kube-controller-manager.conf etc/init
+config/kube-controller-manager etc/default
