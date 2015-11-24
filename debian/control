@@ -6,32 +6,37 @@ Build-Depends: debhelper (>= 9)
 Standards-Version: 3.9.5
 Homepage: https://kubernetes.io
 
-Package: kubectl
+Package: kubernetes
 Architecture: amd64
 Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Kubernetes package to contain shared components
+
+Package: kubectl
+Architecture: amd64
+Depends: ${shlibs:Depends}, ${misc:Depends}, kube
 Description: Commandline utility to interact with a kubernetes cluster
 
 Package: kubelet
 Architecture: amd64
-Depends: ${shlibs:Depends}, ${misc:Depends}
+Depends: ${shlibs:Depends}, ${misc:Depends}, kube
 Description: Primary node agent for kubernetes
 
 Package: kube-proxy
 Architecture: amd64
-Depends: ${shlibs:Depends}, ${misc:Depends}
+Depends: ${shlibs:Depends}, ${misc:Depends}, kube
 Description: Kubernetes network proxy
 
 Package: kube-apiserver
 Architecture: amd64
-Depends: ${shlibs:Depends}, ${misc:Depends}
+Depends: ${shlibs:Depends}, ${misc:Depends}, kube
 Description: Kubernetes API Server
 
 Package: kube-scheduler
 Architecture: amd64
-Depends: ${shlibs:Depends}, ${misc:Depends}
+Depends: ${shlibs:Depends}, ${misc:Depends}, kube
 Description: Kubernetes Pod scheduler
 
 Package: kube-controller-manager
 Architecture: amd64
-Depends: ${shlibs:Depends}, ${misc:Depends}
+Depends: ${shlibs:Depends}, ${misc:Depends}, kube
 Description: Kubernetes Controller manager
