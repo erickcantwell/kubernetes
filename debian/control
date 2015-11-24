@@ -1,0 +1,37 @@
+Source: kubernetes
+Section: admin
+Priority: optional
+Maintainer: Erick Cantwell <ecantwell@mirantis.com>
+Build-Depends: debhelper (>= 9)
+Standards-Version: 3.9.5
+Homepage: https://kubernetes.io
+
+Package: kubectl
+Architecture: amd64
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Commandline utility to interact with a kubernetes cluster
+
+Package: kubelet
+Architecture: amd64
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Primary node agent for kubernetes
+
+Package: kube-proxy
+Architecture: amd64
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Kubernetes network proxy
+
+Package: kube-apiserver
+Architecture: amd64
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Kubernetes API Server
+
+Package: kube-scheduler
+Architecture: amd64
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Kubernetes Pod scheduler
+
+Package: kube-controller-manager
+Architecture: amd64
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Kubernetes Controller manager

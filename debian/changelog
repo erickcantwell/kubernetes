@@ -1,0 +1,5 @@
+kubernetes (1.1.0) unstable; urgency=low
+
+  * Initial Release.
+
+ -- Erick Cantwell <ecantwell@mirantis.com>  Mon, 23 Nov 2015 20:42:15 +0700
